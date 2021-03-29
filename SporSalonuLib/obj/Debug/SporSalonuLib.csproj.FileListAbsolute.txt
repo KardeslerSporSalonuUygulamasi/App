@@ -1,0 +1,6 @@
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\Debug\SporSalonuLib.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\Debug\SporSalonuLib.pdb
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\Debug\SporSalonuLib.csprojAssemblyReference.cache
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\Debug\SporSalonuLib.csproj.CoreCompileInputs.cache
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\Debug\SporSalonuLib.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\Debug\SporSalonuLib.pdb
