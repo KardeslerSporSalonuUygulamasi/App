@@ -26,7 +26,6 @@ namespace SporSalonuUI
         {
             UyeOlusturma frm = new UyeOlusturma();
             frm.Show();
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

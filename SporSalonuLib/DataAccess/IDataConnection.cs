@@ -20,9 +20,9 @@ namespace SporSalonuLib
         void CreatePerson(PersonModel model);
 
         /// <summary>
-        /// Bütün kişileri çekmemize yarayacak fonksiyon.
+        /// Olan bir kişiyi python scripti aracılığıyla çekmemizi sağlayacak fonksiyon.
         /// </summary>
         /// <returns></returns>
-        List<PersonModel> GetPerson_All();
+        PersonModel GetPerson(PersonModel p);
     }
 }

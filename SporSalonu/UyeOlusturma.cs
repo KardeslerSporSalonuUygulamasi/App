@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SporSalonu;
 using SporSalonuLib;
 using SporSalonuLib.Models;
 
@@ -18,16 +19,42 @@ namespace SporSalonuUI
         public UyeOlusturma()
         {
             InitializeComponent();
+            // TODO - Bu alanları programı yapmak kolay olsun diye yaptın. SİL!
+            isimTextBox.Text = "ahmet yusuf";
+            soyisimTextBox.Text = "birinci";
+            emailTextBox.Text = "email@mail.com";
+            telefonTextBox.Text = "0321848245";
+            kiloTextBox.Text = "20";
+            yasComboBox.Text = "45";
+            boyTextBox.Text = "186";
+
+
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        /// <summary>
+        /// UyeBul formundan isim yazıp Üye Bul'a bastığımızda olan üyeyi bu forma
+        /// getiriyoruz. Olan üyeyi getirdiğimiz için Üye Oluştur butonunu Üyeyi Güncelle
+        /// şeklinde değiştiriyoruz.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <param name="i"></param>
+        public UyeOlusturma(PersonModel p, int i)
         {
+            InitializeComponent();
+            isimTextBox.Text = p.Adı;
+            soyisimTextBox.Text = p.Soyadı;
 
-        }
+            emailTextBox.Text = p.EmailAdress;
+            telefonTextBox.Text = p.Telefon;
+            kiloTextBox.Text = p.Kilo;
+            yasComboBox.SelectedItem = p.Yas;
+            cinsiyetComboBox.SelectedItem = p.Cinsiyet;
+            boyTextBox.Text = p.Boy;
+            tcTextBox.Text = p.id;
 
-        private void UyeOlusturma_Load(object sender, EventArgs e)
-        {
-
+            uyeOlusturButton.Text = "Üyeyi Güncelle";
+            uyeOlusturButton.BackColor = Color.Red;
+            uyeOlusturButton.ForeColor = Color.White;
         }
 
         /// <summary>
@@ -52,7 +79,10 @@ namespace SporSalonuUI
 
             if (!dogumTarihiDateTimePicker.Checked) return false;
 
-            if (programRichTextBox.Text.Length == 0) return false;
+            if (tcTextBox.Text.Length == 0)         return false;
+
+            if (cinsiyetComboBox.Text.Length == 0)  return false;
+
 
             return true;
         }
@@ -75,23 +105,42 @@ namespace SporSalonuUI
                 p.Telefon = telefonTextBox.Text;
                 p.Kilo = kiloTextBox.Text;
                 p.Yas = (string)yasComboBox.SelectedItem;
+                p.DogumTarihi = dogumTarihiDateTimePicker.Text;
+                p.Boy = boyTextBox.Text;
+                p.Cinsiyet = (string)cinsiyetComboBox.SelectedItem;
+                p.id = tcTextBox.Text;
 
                 // İstenilen databasede kişi oluşturulması için Globalcofige
-                // oradan da CreatePerson fonksiyonuna gider.
+                // oradan da Database'e özel CreatePerson fonksiyonuna gider.
                 GlobalConfig.Connection.CreatePerson(p);
 
+                // TODO - Bu alanları programı yaparken kolaylık olsun diye kapadın. AÇ!
+
                 // Alanlar tekrar boş haline geri döndürülüyor.
-                isimTextBox.Text = "";
-                soyisimTextBox.Text = "";
-                emailTextBox.Text = "";
-                telefonTextBox.Text = "";
-                kiloTextBox.Text = "";
-                yasComboBox.Text = "";
+                //isimTextBox.Text = "";
+                //soyisimTextBox.Text = "";
+                //emailTextBox.Text = "";
+                //telefonTextBox.Text = "";
+                //kiloTextBox.Text = "";
+                //yasComboBox.Text = "";
+                //boyTextBox.Text = "";
             }
             else
             {
                 MessageBox.Show("Alanların hepsini doldurmalısınız!");
             }
+        }
+
+        private void programıEkleButton_Click(object sender, EventArgs e)
+        {
+            ProgramOluşturForm frm = new ProgramOluşturForm();
+            frm.Show();
+        }
+
+        private void UyeOlusturma_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Giris frm = new Giris();
+            //frm.Show();
         }
     }
 }

@@ -48,18 +48,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IronPython, Version=2.7.11.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>..\packages\IronPython.2.7.11\lib\net45\IronPython.dll</HintPath>
-    </Reference>
-    <Reference Include="IronPython.Modules, Version=2.7.11.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>..\packages\IronPython.2.7.11\lib\net45\IronPython.Modules.dll</HintPath>
-    </Reference>
-    <Reference Include="IronPython.SQLite, Version=2.7.11.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>..\packages\IronPython.2.7.11\lib\net45\IronPython.SQLite.dll</HintPath>
-    </Reference>
-    <Reference Include="IronPython.Wpf, Version=2.7.11.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
-      <HintPath>..\packages\IronPython.2.7.11\lib\net45\IronPython.Wpf.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Dynamic, Version=1.3.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
       <HintPath>..\packages\DynamicLanguageRuntime.1.3.0\lib\net45\Microsoft.Dynamic.dll</HintPath>
     </Reference>
@@ -82,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProgramOluşturForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramOluşturForm.Designer.cs">
+      <DependentUpon>ProgramOluşturForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UyeBul.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +98,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Giris.resx">
       <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramOluşturForm.resx">
+      <DependentUpon>ProgramOluşturForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -162,5 +159,93 @@
       <Name>SporSalonuLib</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\abc.py" />
+    <Content Include="Lib\aifc.py" />
+    <Content Include="Lib\antigravity.py" />
+    <Content Include="Lib\anydbm.py" />
+    <Content Include="Lib\argparse.py" />
+    <Content Include="Lib\ast.py" />
+    <Content Include="Lib\asynchat.py" />
+    <Content Include="Lib\asyncore.py" />
+    <Content Include="Lib\atexit.py" />
+    <Content Include="Lib\audiodev.py" />
+    <Content Include="Lib\base64.py" />
+    <Content Include="Lib\BaseHTTPServer.py" />
+    <Content Include="Lib\Bastion.py" />
+    <Content Include="Lib\bdb.py" />
+    <Content Include="Lib\binhex.py" />
+    <Content Include="Lib\bisect.py" />
+    <Content Include="Lib\calendar.py" />
+    <Content Include="Lib\cgi.py" />
+    <Content Include="Lib\CGIHTTPServer.py" />
+    <Content Include="Lib\cgitb.py" />
+    <Content Include="Lib\chunk.py" />
+    <Content Include="Lib\clrtype.py" />
+    <Content Include="Lib\cmd.py" />
+    <Content Include="Lib\code.py" />
+    <Content Include="Lib\codecs.py" />
+    <Content Include="Lib\codeop.py" />
+    <Content Include="Lib\collections.py" />
+    <Content Include="Lib\colorsys.py" />
+    <Content Include="Lib\commands.py" />
+    <Content Include="Lib\compileall.py" />
+    <Content Include="Lib\ConfigParser.py" />
+    <Content Include="Lib\contextlib.py" />
+    <Content Include="Lib\Cookie.py" />
+    <Content Include="Lib\cookielib.py" />
+    <Content Include="Lib\copy.py" />
+    <Content Include="Lib\csv.py" />
+    <Content Include="Lib\decimal.py" />
+    <Content Include="Lib\difflib.py" />
+    <Content Include="Lib\dircache.py" />
+    <Content Include="Lib\dis.py" />
+    <Content Include="Lib\doctest.py" />
+    <Content Include="Lib\DocXMLRPCServer.py" />
+    <Content Include="Lib\dumbdbm.py" />
+    <Content Include="Lib\dummy_thread.py" />
+    <Content Include="Lib\dummy_threading.py" />
+    <Content Include="Lib\filecmp.py" />
+    <Content Include="Lib\fileinput.py" />
+    <Content Include="Lib\fnmatch.py" />
+    <Content Include="Lib\formatter.py" />
+    <Content Include="Lib\fpformat.py" />
+    <Content Include="Lib\fractions.py" />
+    <Content Include="Lib\ftplib.py" />
+    <Content Include="Lib\functools.py" />
+    <Content Include="Lib\genericpath.py" />
+    <Content Include="Lib\getopt.py" />
+    <Content Include="Lib\getpass.py" />
+    <Content Include="Lib\gettext.py" />
+    <Content Include="Lib\glob.py" />
+    <Content Include="Lib\gzip.py" />
+    <Content Include="Lib\hashlib.py" />
+    <Content Include="Lib\heapq.py" />
+    <Content Include="Lib\hmac.py" />
+    <Content Include="Lib\htmlentitydefs.py" />
+    <Content Include="Lib\htmllib.py" />
+    <Content Include="Lib\HTMLParser.py" />
+    <Content Include="Lib\httplib.py" />
+    <Content Include="Lib\ihooks.py" />
+    <Content Include="Lib\imaplib.py" />
+    <Content Include="Lib\pdb.py" />
+    <Content Include="Lib\pickle.py" />
+    <Content Include="Lib\pickletools.py" />
+    <Content Include="Lib\pipes.py" />
+    <Content Include="Lib\pkgutil.py" />
+    <Content Include="Lib\platform.py" />
+    <Content Include="Lib\plistlib.py" />
+    <Content Include="Lib\popen2.py" />
+    <Content Include="Lib\poplib.py" />
+    <Content Include="Lib\posixfile.py" />
+    <Content Include="Lib\posixpath.py" />
+    <Content Include="Lib\pprint.py" />
+    <Content Include="Lib\profile.py" />
+    <Content Include="Lib\pstats.py" />
+    <Content Include="Lib\pyclbr.py" />
+    <Content Include="Lib\pydoc.py" />
+    <Content Include="Lib\xml\__init__.py" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

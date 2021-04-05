@@ -16,6 +16,10 @@ namespace SporSalonuUI
         static void Main()
         {
             Application.EnableVisualStyles();
+
+            // Database bağlantısını tanımlıyoruz.
+            GlobalConfig.InitializeConnections(DatabaseType.TextFile);
+
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Giris());
         }

@@ -15,7 +15,7 @@ namespace SporSalonuLib.Models
         /// <summary>
         /// Her bir kişi için tek bir id.
         /// </summary>
-        public int id { get; set; }
+        public string id { get; set; }
 
         /// <summary>
         /// Kişinin adı.
@@ -48,6 +48,11 @@ namespace SporSalonuLib.Models
         public string Yas { get; set; }
 
         /// <summary>
+        /// Kişinin cinsiyeti.
+        /// </summary>
+        public string Cinsiyet { get; set; }
+
+        /// <summary>
         /// Kişinin doğum tarihi
         /// </summary>
         public string DogumTarihi { get; set; }
@@ -58,6 +63,11 @@ namespace SporSalonuLib.Models
         public string Program { get; set; }
 
         /// <summary>
+        /// Kişinin boyu
+        /// </summary>
+        public string Boy { get; set; }
+
+        /// <summary>
         /// Kişinin tam adını dönen bir fonksiyon.
         /// </summary>
         public string TamAd
@@ -65,6 +75,11 @@ namespace SporSalonuLib.Models
             get
             {
                 return $"{ Adı } { Soyadı }";
+            }
+
+            set
+            {
+                TamAd = $"{ Adı }";
             }
 
         }
