@@ -54,6 +54,7 @@ namespace SporSalonuUI
             this.tcTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.programıEkleButton = new System.Windows.Forms.Button();
+            this.uyeSilButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // uyeOlusturLabel
@@ -394,12 +395,29 @@ namespace SporSalonuUI
             this.programıEkleButton.UseVisualStyleBackColor = false;
             this.programıEkleButton.Click += new System.EventHandler(this.programıEkleButton_Click);
             // 
+            // uyeSilButton
+            // 
+            this.uyeSilButton.BackColor = System.Drawing.Color.Red;
+            this.uyeSilButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.uyeSilButton.FlatAppearance.BorderSize = 2;
+            this.uyeSilButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uyeSilButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.uyeSilButton.Location = new System.Drawing.Point(663, 473);
+            this.uyeSilButton.Margin = new System.Windows.Forms.Padding(2);
+            this.uyeSilButton.Name = "uyeSilButton";
+            this.uyeSilButton.Size = new System.Drawing.Size(104, 37);
+            this.uyeSilButton.TabIndex = 43;
+            this.uyeSilButton.Text = "Sil";
+            this.uyeSilButton.UseVisualStyleBackColor = false;
+            this.uyeSilButton.Click += new System.EventHandler(this.uyeSilButton_Click);
+            // 
             // UyeOlusturma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(788, 558);
+            this.Controls.Add(this.uyeSilButton);
             this.Controls.Add(this.programıEkleButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tcLabel);
@@ -460,6 +478,7 @@ namespace SporSalonuUI
         private System.Windows.Forms.TextBox tcTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button programıEkleButton;
+        private System.Windows.Forms.Button uyeSilButton;
     }
 }
 

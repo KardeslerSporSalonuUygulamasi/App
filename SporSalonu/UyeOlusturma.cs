@@ -16,9 +16,15 @@ namespace SporSalonuUI
 {
     public partial class UyeOlusturma : Form
     {
+        public bool guncelle = false;
+        public string finalProgram = "";
+        public readonly ProgramOluşturForm prolusturfrm;
+        private PersonModel pmodel;
+
         public UyeOlusturma()
         {
             InitializeComponent();
+            uyeSilButton.Hide();
             // TODO - Bu alanları programı yapmak kolay olsun diye yaptın. SİL!
             isimTextBox.Text = "ahmet yusuf";
             soyisimTextBox.Text = "birinci";
@@ -40,7 +46,9 @@ namespace SporSalonuUI
         /// <param name="i"></param>
         public UyeOlusturma(PersonModel p, int i)
         {
+            guncelle = true;
             InitializeComponent();
+            uyeSilButton.Show();
             isimTextBox.Text = p.Adı;
             soyisimTextBox.Text = p.Soyadı;
 
@@ -51,6 +59,9 @@ namespace SporSalonuUI
             cinsiyetComboBox.SelectedItem = p.Cinsiyet;
             boyTextBox.Text = p.Boy;
             tcTextBox.Text = p.id;
+            finalProgram = p.Program;
+
+            pmodel = p;
 
             uyeOlusturButton.Text = "Üyeyi Güncelle";
             uyeOlusturButton.BackColor = Color.Red;
@@ -83,6 +94,8 @@ namespace SporSalonuUI
 
             if (cinsiyetComboBox.Text.Length == 0)  return false;
 
+            if (finalProgram.Length == 0)           return false;
+
 
             return true;
         }
@@ -95,7 +108,10 @@ namespace SporSalonuUI
         /// <param name="e"></param>
         private void uyeOlusturButton_Click(object sender, EventArgs e)
         {
-            if (FormOnayi())
+            // %90 gereksiz if statement
+            //if(uyeOlusturButton.Text == "Üyeyi Güncelle") { guncelle = true; }
+
+            if (FormOnayi() && !guncelle)
             {
                 PersonModel p = new PersonModel();
 
@@ -109,10 +125,13 @@ namespace SporSalonuUI
                 p.Boy = boyTextBox.Text;
                 p.Cinsiyet = (string)cinsiyetComboBox.SelectedItem;
                 p.id = tcTextBox.Text;
+                p.Program = finalProgram;
+
 
                 // İstenilen databasede kişi oluşturulması için Globalcofige
                 // oradan da Database'e özel CreatePerson fonksiyonuna gider.
                 GlobalConfig.Connection.CreatePerson(p);
+
 
                 // TODO - Bu alanları programı yaparken kolaylık olsun diye kapadın. AÇ!
 
@@ -125,6 +144,28 @@ namespace SporSalonuUI
                 //yasComboBox.Text = "";
                 //boyTextBox.Text = "";
             }
+            else if(FormOnayi() && guncelle)
+            {
+                PersonModel p = new PersonModel();
+
+                p.Adı = isimTextBox.Text;
+                p.Soyadı = soyisimTextBox.Text;
+                p.EmailAdress = emailTextBox.Text;
+                p.Telefon = telefonTextBox.Text;
+                p.Kilo = kiloTextBox.Text;
+                p.Yas = (string)yasComboBox.SelectedItem;
+                p.DogumTarihi = dogumTarihiDateTimePicker.Text;
+                p.Boy = boyTextBox.Text;
+                p.Cinsiyet = (string)cinsiyetComboBox.SelectedItem;
+                p.id = tcTextBox.Text;
+                p.Program = finalProgram;
+
+                // İstenilen databasede kişi oluşturulması için Globalcofige
+                // oradan da Database'e özel CreatePerson fonksiyonuna gider.
+                GlobalConfig.Connection.UpdatePerson(p);
+                this.Close();
+                guncelle = false;
+            }
             else
             {
                 MessageBox.Show("Alanların hepsini doldurmalısınız!");
@@ -133,7 +174,7 @@ namespace SporSalonuUI
 
         private void programıEkleButton_Click(object sender, EventArgs e)
         {
-            ProgramOluşturForm frm = new ProgramOluşturForm();
+            ProgramOluşturForm frm = new ProgramOluşturForm(this);
             frm.Show();
         }
 
@@ -141,6 +182,12 @@ namespace SporSalonuUI
         {
             //Giris frm = new Giris();
             //frm.Show();
+        }
+
+        private void uyeSilButton_Click(object sender, EventArgs e)
+        {
+            GlobalConfig.Connection.RemovePerson(pmodel);
+            this.Close();
         }
     }
 }

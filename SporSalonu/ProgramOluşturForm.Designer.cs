@@ -35,7 +35,6 @@ namespace SporSalonu
             this.programRichTextBox = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.programıEkleButton = new System.Windows.Forms.Button();
-            this.bitirButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // programOlusturLabel
@@ -111,24 +110,11 @@ namespace SporSalonu
             this.programıEkleButton.Location = new System.Drawing.Point(35, 504);
             this.programıEkleButton.Margin = new System.Windows.Forms.Padding(2);
             this.programıEkleButton.Name = "programıEkleButton";
-            this.programıEkleButton.Size = new System.Drawing.Size(331, 41);
+            this.programıEkleButton.Size = new System.Drawing.Size(621, 41);
             this.programıEkleButton.TabIndex = 41;
             this.programıEkleButton.Text = "Programı ekle";
             this.programıEkleButton.UseVisualStyleBackColor = false;
-            // 
-            // bitirButton
-            // 
-            this.bitirButton.BackColor = System.Drawing.Color.DarkRed;
-            this.bitirButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bitirButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bitirButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.bitirButton.Location = new System.Drawing.Point(370, 504);
-            this.bitirButton.Margin = new System.Windows.Forms.Padding(2);
-            this.bitirButton.Name = "bitirButton";
-            this.bitirButton.Size = new System.Drawing.Size(286, 41);
-            this.bitirButton.TabIndex = 42;
-            this.bitirButton.Text = "Bitir";
-            this.bitirButton.UseVisualStyleBackColor = false;
+            this.programıEkleButton.Click += new System.EventHandler(this.programıEkleButton_Click);
             // 
             // ProgramOluşturForm
             // 
@@ -136,7 +122,6 @@ namespace SporSalonu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(695, 582);
-            this.Controls.Add(this.bitirButton);
             this.Controls.Add(this.programıEkleButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.programRichTextBox);
@@ -155,9 +140,8 @@ namespace SporSalonu
         private System.Windows.Forms.Label programOlusturLabel;
         private System.Windows.Forms.ComboBox programComboBox;
         private System.Windows.Forms.Label isimLabel;
-        private System.Windows.Forms.RichTextBox programRichTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button programıEkleButton;
-        private System.Windows.Forms.Button bitirButton;
+        protected System.Windows.Forms.RichTextBox programRichTextBox;
     }
 }

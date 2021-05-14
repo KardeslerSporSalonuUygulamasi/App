@@ -41,9 +41,10 @@ namespace SporSalonuUI
             this.SporSalonuLabel.AutoSize = true;
             this.SporSalonuLabel.Font = new System.Drawing.Font("Segoe UI Emoji", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SporSalonuLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.SporSalonuLabel.Location = new System.Drawing.Point(337, 9);
+            this.SporSalonuLabel.Location = new System.Drawing.Point(253, 7);
+            this.SporSalonuLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SporSalonuLabel.Name = "SporSalonuLabel";
-            this.SporSalonuLabel.Size = new System.Drawing.Size(753, 80);
+            this.SporSalonuLabel.Size = new System.Drawing.Size(603, 64);
             this.SporSalonuLabel.TabIndex = 0;
             this.SporSalonuLabel.Text = "Spor Salonuna hosgeldiniz!";
             this.SporSalonuLabel.Click += new System.EventHandler(this.label1_Click);
@@ -54,9 +55,10 @@ namespace SporSalonuUI
             this.YeniUyeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.YeniUyeButton.Font = new System.Drawing.Font("Segoe UI Emoji", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.YeniUyeButton.ForeColor = System.Drawing.Color.Black;
-            this.YeniUyeButton.Location = new System.Drawing.Point(818, 243);
+            this.YeniUyeButton.Location = new System.Drawing.Point(614, 197);
+            this.YeniUyeButton.Margin = new System.Windows.Forms.Padding(2);
             this.YeniUyeButton.Name = "YeniUyeButton";
-            this.YeniUyeButton.Size = new System.Drawing.Size(345, 71);
+            this.YeniUyeButton.Size = new System.Drawing.Size(259, 58);
             this.YeniUyeButton.TabIndex = 1;
             this.YeniUyeButton.Text = "Yeni Üye";
             this.YeniUyeButton.UseVisualStyleBackColor = false;
@@ -70,9 +72,10 @@ namespace SporSalonuUI
             this.UyeSecButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UyeSecButton.Font = new System.Drawing.Font("Segoe UI Emoji", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UyeSecButton.ForeColor = System.Drawing.Color.Black;
-            this.UyeSecButton.Location = new System.Drawing.Point(818, 337);
+            this.UyeSecButton.Location = new System.Drawing.Point(614, 274);
+            this.UyeSecButton.Margin = new System.Windows.Forms.Padding(2);
             this.UyeSecButton.Name = "UyeSecButton";
-            this.UyeSecButton.Size = new System.Drawing.Size(345, 71);
+            this.UyeSecButton.Size = new System.Drawing.Size(259, 58);
             this.UyeSecButton.TabIndex = 2;
             this.UyeSecButton.Text = "Üye Seç";
             this.UyeSecButton.UseVisualStyleBackColor = false;
@@ -80,29 +83,28 @@ namespace SporSalonuUI
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::SporSalonuUI.Properties.Resources.bodybuilding_PNG55;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(152, 124);
+            this.panel1.Location = new System.Drawing.Point(79, 115);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(516, 425);
+            this.panel1.Size = new System.Drawing.Size(444, 367);
             this.panel1.TabIndex = 3;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Giris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1365, 668);
+            this.ClientSize = new System.Drawing.Size(1024, 543);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.UyeSecButton);
             this.Controls.Add(this.YeniUyeButton);
             this.Controls.Add(this.SporSalonuLabel);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Giris";
             this.Text = "Giris";
-            this.Load += new System.EventHandler(this.Giris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

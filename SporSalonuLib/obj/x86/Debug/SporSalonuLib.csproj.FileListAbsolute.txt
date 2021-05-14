@@ -1,0 +1,12 @@
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\x86\Debug\SporSalonuLib.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\x86\Debug\SporSalonuLib.pdb
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\x86\Debug\Microsoft.Dynamic.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\x86\Debug\Microsoft.Scripting.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\x86\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\x86\Debug\Microsoft.Dynamic.xml
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\x86\Debug\Microsoft.Scripting.xml
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\x86\Debug\Microsoft.Scripting.Metadata.xml
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\x86\Debug\SporSalonuLib.csproj.CoreCompileInputs.cache
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\x86\Debug\SporSalonuLib.csproj.CopyComplete
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\x86\Debug\SporSalonuLib.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\x86\Debug\SporSalonuLib.pdb

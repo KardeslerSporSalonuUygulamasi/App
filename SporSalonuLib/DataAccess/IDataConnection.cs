@@ -20,6 +20,18 @@ namespace SporSalonuLib
         void CreatePerson(PersonModel model);
 
         /// <summary>
+        /// Seçilen database tipinde seçilen kişinin bilgilerinin güncellemeye yarar.
+        /// </summary>
+        /// <param name="model"></param>
+        void UpdatePerson(PersonModel model);
+
+        /// <summary>
+        /// Seçilen kişiyi databaseden silmeye yarar.
+        /// </summary>
+        /// <param name="model"></param>
+        void RemovePerson(PersonModel model);
+
+        /// <summary>
         /// Olan bir kişiyi python scripti aracılığıyla çekmemizi sağlayacak fonksiyon.
         /// </summary>
         /// <returns></returns>

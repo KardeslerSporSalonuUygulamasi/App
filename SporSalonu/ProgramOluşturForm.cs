@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SporSalonuUI;
 
 namespace SporSalonu
 {
     public partial class ProgramOluşturForm : Form
     {
+        public readonly UyeOlusturma uye;
+        public string endString = "";
+
         string baslangıc = " Koşu bandı : 10 Dakika = Kardiyo\n"    +
                 "Eliptik Bisiklet : 5 Dakika = Kardiyo\n"           +
                 "Leg Press :  3 Set 10 Tekrar = Bacak\n"            +
@@ -34,10 +38,12 @@ namespace SporSalonu
                 "Cable Crunch : 3 Set Maksimum Tekrar";
                
 
-        public ProgramOluşturForm()
+        public ProgramOluşturForm(UyeOlusturma uyeForm)
         {
+            uye = uyeForm;
             InitializeComponent();
-
+            if (uye.guncelle)
+                programRichTextBox.Text = uye.finalProgram.Replace("*", "\n");
             
         }
 
@@ -51,6 +57,23 @@ namespace SporSalonu
             {
                 programRichTextBox.Text = orta;
             }
+        }
+
+        private void programıEkleButton_Click(object sender, EventArgs e)
+        {
+            if(programRichTextBox.Text.Length == 0)
+            {
+                MessageBox.Show("Lütfen program kısmını doldurunuz!", "Boş alan!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                //endString = programRichTextBox.Text.Replace("\n", "*");
+                
+                uye.finalProgram = programRichTextBox.Text.Replace("\n", "*");
+
+                this.Close();
+            }
+            
         }
     }
 }

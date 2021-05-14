@@ -33,10 +33,14 @@ namespace SporSalonuUI
 
             p = GlobalConfig.Connection.GetPerson(p);
 
-            UyeOlusturma frm = new UyeOlusturma(p, 1);
-            frm.Show();
-            
-            this.Close();
+            if (p.Adı != "*")
+            {
+                UyeOlusturma frm = new UyeOlusturma(p, 1);
+                frm.Show();
+
+                this.Close(); 
+            }
+
         }
     }
 }

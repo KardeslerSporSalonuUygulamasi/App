@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="SporSalonuLib.DataAccess.TextConnector">
+    <Position X="5.5" Y="2.75" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAIAABAAAAAACAAAA=</HashCode>
+      <FileName>DataAccess\TextConnector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SporSalonuLib.Models.PersonModel">
+    <Position X="0.5" Y="1" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAQAAACAAAAEAAAAAAAACAAIAAAAACAAAACABAwA=</HashCode>
+      <FileName>Models\PersonModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SporSalonuLib.GlobalConfig">
+    <Position X="3.5" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GlobalConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SporSalonuLib.IDataConnection">
+    <Position X="7" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAACAAAA=</HashCode>
+      <FileName>DataAccess\IDataConnection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SporSalonuLib.DatabaseType">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

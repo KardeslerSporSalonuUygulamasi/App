@@ -28,20 +28,15 @@ namespace SporSalonuUI
             frm.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Giris_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void UyeSecButton_Click(object sender, EventArgs e)
         {
             UyeBul frm = new UyeBul();
             frm.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

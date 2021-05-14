@@ -1,0 +1,13 @@
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\Release\SporSalonuLib.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\Release\SporSalonuLib.pdb
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\Release\Microsoft.Dynamic.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\Release\Microsoft.Scripting.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\Release\Microsoft.Scripting.Metadata.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\Release\Microsoft.Dynamic.xml
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\Release\Microsoft.Scripting.xml
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\bin\Release\Microsoft.Scripting.Metadata.xml
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\Release\SporSalonuLib.csprojAssemblyReference.cache
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\Release\SporSalonuLib.csproj.CoreCompileInputs.cache
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\Release\SporSalonuLib.csproj.CopyComplete
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\Release\SporSalonuLib.dll
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonuLib\obj\Release\SporSalonuLib.pdb
