@@ -32,6 +32,12 @@ namespace SporSalonuLib
         void RemovePerson(PersonModel model);
 
         /// <summary>
+        /// Girilen programı kaydetmemize yarar.
+        /// </summary>
+        /// <param name="program"></param>
+        void CreateWorkoutProgram(PersonModel model, string program);
+
+        /// <summary>
         /// Olan bir kişiyi python scripti aracılığıyla çekmemizi sağlayacak fonksiyon.
         /// </summary>
         /// <returns></returns>

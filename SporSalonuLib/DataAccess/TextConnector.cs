@@ -17,13 +17,19 @@ namespace SporSalonuLib.DataAccess
 {
     public class TextConnector : IDataConnection
     {
+        /// <summary>
+        /// Verilen PersonModeli ConvertToPersonModels() fonksiyonu stringe dönüştürdükten sonra
+        /// python scriptimizi dönülen stringi argüman olarak vererek çalıştırıyoruz ve pythonun 
+        /// terminale yazdırdığını okuyoruz.
+        /// </summary>
+        /// <param name="model"></param>
         public void CreatePerson(PersonModel model)
         {
             string personInfo= ConvertToPersonModels(model);
 
             Console.WriteLine(personInfo);
 
-            string fileName = @"test.py" + personInfo;
+            string fileName = @"programsiz.py" + personInfo;
             Process p = new Process();
 
             p.StartInfo = new ProcessStartInfo(@"python.exe", fileName)
@@ -50,7 +56,7 @@ namespace SporSalonuLib.DataAccess
 
             Console.WriteLine(personInfo);
 
-            string fileName = @"test.py" + personInfo;
+            string fileName = @"programsiz.py" + personInfo;
             Process p = new Process();
 
             p.StartInfo = new ProcessStartInfo(@"python.exe", fileName)
@@ -80,7 +86,7 @@ namespace SporSalonuLib.DataAccess
 
                 Console.WriteLine(personInfo);
 
-                string fileName = @"test.py" + personInfo;
+                string fileName = @"programsiz.py" + personInfo;
                 Process p = new Process();
 
                 p.StartInfo = new ProcessStartInfo(@"python.exe", fileName)
@@ -101,14 +107,50 @@ namespace SporSalonuLib.DataAccess
             }
         }
 
-        private string ConvertToPersonModelsForUpdate(PersonModel p)
+        public void CreateWorkoutProgram(PersonModel model, string program)
         {
-            return $" g \"{ p.id }|{ p.Adı }|{ p.Soyadı }|{ p.Yas }|{ p.Cinsiyet }|{ p.Boy }|{ p.Kilo }|{ p.Telefon }|{ p.EmailAdress }|{ p.DogumTarihi }|{ p.Program }\"";
+            
+            Console.WriteLine(program);
+
+            string fileName = @"programsiz.py pw " + model.id + " " + program.Replace(' ', ';');
+            Process p = new Process();
+
+            p.StartInfo = new ProcessStartInfo(@"python.exe", fileName)
+            {
+                RedirectStandardOutput = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            p.Start();
+            string output = p.StandardOutput.ReadToEnd();
+            p.WaitForExit();
+
+            Console.WriteLine(output);
+
+            //MessageBox.Show("Üye başarıyla oluşturulmuştur!");
+            MessageBox.Show("Program başarıyla eklendi!", "Başarılı ekleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
+        /// <summary>
+        /// Verilen PersonModeli ile gönderilen verilerin arasına | karakterini koyarak düz bir stringe dönüştürür.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        private string ConvertToPersonModelsForUpdate(PersonModel p)
+        {
+            return $" g \"{ p.id }|{ p.Adı }|{ p.Soyadı }|{ p.Yas }|{ p.Cinsiyet }|{ p.Boy }|{ p.Kilo }|{ p.Telefon }|{ p.EmailAdress }|{ p.DogumTarihi }\"";
+        }
+
+        /// <summary>
+        /// Verilen PersonModeli ile gönderilen verilerin arasına | karakterini koyarak düz bir stringe dönüştürür.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public string ConvertToPersonModels(PersonModel p)
         {
-            return $" w \"{ p.id }|{ p.Adı }|{ p.Soyadı }|{ p.Yas }|{ p.Cinsiyet }|{ p.Boy }|{ p.Kilo }|{ p.Telefon }|{ p.EmailAdress }|{ p.DogumTarihi }|{ p.Program }\"";
+            return $" w \"{ p.id }|{ p.Adı }|{ p.Soyadı }|{ p.Yas }|{ p.Cinsiyet }|{ p.Boy }|{ p.Kilo }|{ p.Telefon }|{ p.EmailAdress }|{ p.DogumTarihi }\"";
         }
 
         public PersonModel ConvertFromStringToPersonModel(string output, PersonModel person)
@@ -158,7 +200,7 @@ namespace SporSalonuLib.DataAccess
 
             string personName = $" r \"{ person.Adı }\"";
 
-            string fileName = @"test.py" + personName;
+            string fileName = @"programsiz.py" + personName;
 
             Process pros = new Process();
 
@@ -179,6 +221,7 @@ namespace SporSalonuLib.DataAccess
             return ConvertFromStringToPersonModel(output, person);
         }
 
+        
     }
 }
 

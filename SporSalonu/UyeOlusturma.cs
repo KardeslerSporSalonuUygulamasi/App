@@ -19,7 +19,7 @@ namespace SporSalonuUI
         public bool guncelle = false;
         public string finalProgram = "";
         public readonly ProgramOluşturForm prolusturfrm;
-        private PersonModel pmodel;
+        public PersonModel pmodel;
 
         public UyeOlusturma()
         {
@@ -125,8 +125,10 @@ namespace SporSalonuUI
                 p.Boy = boyTextBox.Text;
                 p.Cinsiyet = (string)cinsiyetComboBox.SelectedItem;
                 p.id = tcTextBox.Text;
-                p.Program = finalProgram;
+                p.Program = finalProgram.Replace("\n", "*");
 
+
+                GlobalConfig.Connection.CreateWorkoutProgram(p, p.Program);
 
                 // İstenilen databasede kişi oluşturulması için Globalcofige
                 // oradan da Database'e özel CreatePerson fonksiyonuna gider.
@@ -158,7 +160,10 @@ namespace SporSalonuUI
                 p.Boy = boyTextBox.Text;
                 p.Cinsiyet = (string)cinsiyetComboBox.SelectedItem;
                 p.id = tcTextBox.Text;
-                p.Program = finalProgram;
+                p.Program = finalProgram.Replace("\n", "*");
+
+                GlobalConfig.Connection.CreateWorkoutProgram(p, finalProgram);
+
 
                 // İstenilen databasede kişi oluşturulması için Globalcofige
                 // oradan da Database'e özel CreatePerson fonksiyonuna gider.

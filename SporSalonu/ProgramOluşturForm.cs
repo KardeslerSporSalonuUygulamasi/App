@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SporSalonu;
 using SporSalonuUI;
+using SporSalonuLib;
 
 namespace SporSalonu
 {
@@ -69,7 +71,8 @@ namespace SporSalonu
             {
                 //endString = programRichTextBox.Text.Replace("\n", "*");
                 
-                uye.finalProgram = programRichTextBox.Text.Replace("\n", "*");
+                uye.finalProgram = programRichTextBox.Text;
+
 
                 this.Close();
             }

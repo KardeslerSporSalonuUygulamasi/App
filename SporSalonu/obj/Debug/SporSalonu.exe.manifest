@@ -85,19 +85,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YtNKRzYvAL+70gBi9j+StxatpicmLF4h1ewXIeok/Aw=</dsig:DigestValue>
+        <dsig:DigestValue>0IuNeAHPkmXUUO66xAaAVM7nTs/F4hbYCP/oF15gp7E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SporSalonuLib.dll" size="9216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SporSalonuLib.dll" size="9728">
       <assemblyIdentity name="SporSalonuLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vKUyVFgKy/t0jqeDlEN+HthGYyj0dQ6MZrusd6ChRvI=</dsig:DigestValue>
+        <dsig:DigestValue>S1aRkhQ3gevexn4S5bpzc5DdaMQp5PvZZMR0Ln0ZmhU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
