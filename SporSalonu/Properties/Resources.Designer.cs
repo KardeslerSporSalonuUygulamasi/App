@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SporSalonuUI.Properties {
+namespace SporSalonu.Properties {
     using System;
     
     
@@ -86,6 +86,26 @@ namespace SporSalonuUI.Properties {
         internal static System.Drawing.Bitmap kardeşler {
             get {
                 object obj = ResourceManager.GetObject("kardeşler", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kardeşler2 {
+            get {
+                object obj = ResourceManager.GetObject("kardeşler2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kardeşler3 {
+            get {
+                object obj = ResourceManager.GetObject("kardeşler3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

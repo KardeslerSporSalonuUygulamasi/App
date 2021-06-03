@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -81,6 +81,9 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>n.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Dynamic, Version=1.3.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
       <HintPath>..\packages\DynamicLanguageRuntime.1.3.0\lib\net45\Microsoft.Dynamic.dll</HintPath>
@@ -104,6 +107,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProgramOluşturForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +124,12 @@
     </Compile>
     <Compile Include="UyeBul.Designer.cs">
       <DependentUpon>UyeBul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeGirisiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeGirisiForm.Designer.cs">
+      <DependentUpon>UyeGirisiForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UyeOlusturma.cs">
       <SubType>Form</SubType>
@@ -133,6 +148,9 @@
     <EmbeddedResource Include="Giris.resx">
       <DependentUpon>Giris.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProgramOluşturForm.resx">
       <DependentUpon>ProgramOluşturForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,9 +167,13 @@
     <EmbeddedResource Include="UyeBul.resx">
       <DependentUpon>UyeBul.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UyeGirisiForm.resx">
+      <DependentUpon>UyeGirisiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UyeOlusturma.resx">
       <DependentUpon>UyeOlusturma.cs</DependentUpon>
     </EmbeddedResource>
+    <Resource Include="psw.csv" />
     <None Include="SporSalonuUIClassDiagram.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -197,93 +219,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Lib\abc.py" />
-    <Content Include="Lib\aifc.py" />
-    <Content Include="Lib\antigravity.py" />
-    <Content Include="Lib\anydbm.py" />
-    <Content Include="Lib\argparse.py" />
-    <Content Include="Lib\ast.py" />
-    <Content Include="Lib\asynchat.py" />
-    <Content Include="Lib\asyncore.py" />
-    <Content Include="Lib\atexit.py" />
-    <Content Include="Lib\audiodev.py" />
-    <Content Include="Lib\base64.py" />
-    <Content Include="Lib\BaseHTTPServer.py" />
-    <Content Include="Lib\Bastion.py" />
-    <Content Include="Lib\bdb.py" />
-    <Content Include="Lib\binhex.py" />
-    <Content Include="Lib\bisect.py" />
-    <Content Include="Lib\calendar.py" />
-    <Content Include="Lib\cgi.py" />
-    <Content Include="Lib\CGIHTTPServer.py" />
-    <Content Include="Lib\cgitb.py" />
-    <Content Include="Lib\chunk.py" />
-    <Content Include="Lib\clrtype.py" />
-    <Content Include="Lib\cmd.py" />
-    <Content Include="Lib\code.py" />
-    <Content Include="Lib\codecs.py" />
-    <Content Include="Lib\codeop.py" />
-    <Content Include="Lib\collections.py" />
-    <Content Include="Lib\colorsys.py" />
-    <Content Include="Lib\commands.py" />
-    <Content Include="Lib\compileall.py" />
-    <Content Include="Lib\ConfigParser.py" />
-    <Content Include="Lib\contextlib.py" />
-    <Content Include="Lib\Cookie.py" />
-    <Content Include="Lib\cookielib.py" />
-    <Content Include="Lib\copy.py" />
-    <Content Include="Lib\csv.py" />
-    <Content Include="Lib\decimal.py" />
-    <Content Include="Lib\difflib.py" />
-    <Content Include="Lib\dircache.py" />
-    <Content Include="Lib\dis.py" />
-    <Content Include="Lib\doctest.py" />
-    <Content Include="Lib\DocXMLRPCServer.py" />
-    <Content Include="Lib\dumbdbm.py" />
-    <Content Include="Lib\dummy_thread.py" />
-    <Content Include="Lib\dummy_threading.py" />
-    <Content Include="Lib\filecmp.py" />
-    <Content Include="Lib\fileinput.py" />
-    <Content Include="Lib\fnmatch.py" />
-    <Content Include="Lib\formatter.py" />
-    <Content Include="Lib\fpformat.py" />
-    <Content Include="Lib\fractions.py" />
-    <Content Include="Lib\ftplib.py" />
-    <Content Include="Lib\functools.py" />
-    <Content Include="Lib\genericpath.py" />
-    <Content Include="Lib\getopt.py" />
-    <Content Include="Lib\getpass.py" />
-    <Content Include="Lib\gettext.py" />
-    <Content Include="Lib\glob.py" />
-    <Content Include="Lib\gzip.py" />
-    <Content Include="Lib\hashlib.py" />
-    <Content Include="Lib\heapq.py" />
-    <Content Include="Lib\hmac.py" />
-    <Content Include="Lib\htmlentitydefs.py" />
-    <Content Include="Lib\htmllib.py" />
-    <Content Include="Lib\HTMLParser.py" />
-    <Content Include="Lib\httplib.py" />
-    <Content Include="Lib\ihooks.py" />
-    <Content Include="Lib\imaplib.py" />
-    <Content Include="Lib\pdb.py" />
-    <Content Include="Lib\pickle.py" />
-    <Content Include="Lib\pickletools.py" />
-    <Content Include="Lib\pipes.py" />
-    <Content Include="Lib\pkgutil.py" />
-    <Content Include="Lib\platform.py" />
-    <Content Include="Lib\plistlib.py" />
-    <Content Include="Lib\popen2.py" />
-    <Content Include="Lib\poplib.py" />
-    <Content Include="Lib\posixfile.py" />
-    <Content Include="Lib\posixpath.py" />
-    <Content Include="Lib\pprint.py" />
-    <Content Include="Lib\profile.py" />
-    <Content Include="Lib\pstats.py" />
-    <Content Include="Lib\pyclbr.py" />
-    <Content Include="Lib\pydoc.py" />
-    <Content Include="Lib\xml\__init__.py" />
-    <Content Include="test.py" />
+    <None Include="Resources\kardeşler2.png" />
+    <None Include="Resources\kardeşler3.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="n.ico" />
+    <Content Include="Programs.py" />
+    <Content Include="Proje1.py" />
+    <Content Include="sifre.py" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

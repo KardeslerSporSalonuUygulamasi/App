@@ -1,0 +1,63 @@
+
+kpython:S1192à"MDefine a constant instead of duplicating this literal "/GirisCikis/" 3 times.(šºıÿÿÿÿ
+;python:S125	"Remove this commented out code.(»°ŸÅşÿÿÿÿ
+xpython:S117#"\Rename this local variable "firstLetter" to match the regular expression ^[_a-z][a-z0-9_]*$.(ûş¥¦úÿÿÿÿ
+upython:S117$"YRename this local variable "lastPart" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÙüÈ—úÿÿÿÿ
+opython:S117 "XRename this local variable "newWord" to match the regular expression ^[_a-z][a-z0-9_]*$.(ıíÇ¶
+qpython:S117"URename this parameter "paramWord" to match the regular expression ^[_a-z][a-z0-9_]*$.(£ô—‡ùÿÿÿÿ
+xpython:S1176"\Rename this local variable "rebuiltWord" to match the regular expression ^[_a-z][a-z0-9_]*$.(ó˜•âùÿÿÿÿ
+ppython:S117"YRename this local variable "wordList" to match the regular expression ^[_a-z][a-z0-9_]*$.(†·Â
+apython:S116j"JRename this field "Id" to match the regular expression ^[_a-z][_a-z0-9]*$.(Š¿ùÄ
+opython:S116v"SRename this field "kayitTarihi" to match the regular expression ^[_a-z][_a-z0-9]*$.(“Êû¹üÿÿÿÿ
+lpython:S116t"PRename this field "aboneTip" to match the regular expression ^[_a-z][_a-z0-9]*$.(™ßÎÊûÿÿÿÿ
+opython:S116s"SRename this field "dogumTarihi" to match the regular expression ^[_a-z][_a-z0-9]*$.(”Å¹öşÿÿÿÿ
+gpython:S116I"PRename this field "salonAdi" to match the regular expression ^[_a-z][_a-z0-9]*$.(¦ßÇÖ
+qpython:S116Â"TRename this field "_kayitTarihi" to match the regular expression ^[_a-z][_a-z0-9]*$.(õ€°äûÿÿÿÿ
+cpython:S116Ò"KRename this field "_Id" to match the regular expression ^[_a-z][_a-z0-9]*$.(÷Ÿ
+ipython:S116š"QRename this field "_aboneTip" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ü×÷Š
+qpython:S116†"TRename this field "_dogumTarihi" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÏÖ«ğøÿÿÿÿ
+jpython:S117K"NRename this parameter "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(´ŸÉÂøÿÿÿÿ
+ppython:S117K"TRename this parameter "aboneTip" to match the regular expression ^[_a-z][a-z0-9_]*$.(´ŸÉÂøÿÿÿÿ
+spython:S117K"WRename this parameter "dogumTarihi" to match the regular expression ^[_a-z][a-z0-9_]*$.(´ŸÉÂøÿÿÿÿ
+spython:S117K"WRename this parameter "kayitTarihi" to match the regular expression ^[_a-z][a-z0-9_]*$.(´ŸÉÂøÿÿÿÿ
+jpython:S117z"NRename this parameter "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÎÙ¤Äÿÿÿÿÿ
+ppython:S117z"TRename this parameter "aboneTip" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÎÙ¤Äÿÿÿÿÿ
+spython:S117z"WRename this parameter "dogumTarihi" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÎÙ¤Äÿÿÿÿÿ
+spython:S117z"WRename this parameter "kayitTarihi" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÎÙ¤Äÿÿÿÿÿ
+Apython:S108Ğ")Either remove or fill this block of code.(ã‘Û¾
+wpython:S5886ô"^Return a value of type "list" instead of "NoneType" or update function "aramaListe" type hint.(ò¤Ÿù
+ppython:S117à"XRename this local variable "arananL" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÃıØ–
+qpython:S117í"YRename this local variable "bulunanL" to match the regular expression ^[_a-z][a-z0-9_]*$.(¢°­½
+kpython:S100×"NRename method "aramaListe" to match the regular expression ^[a-z_][a-z0-9_]*$.(…Î•ëüÿÿÿÿ
+upython:S117"XRename this parameter "silinecekUye" to match the regular expression ^[_a-z][a-z0-9_]*$.(·Éß…ÿÿÿÿÿ
+rpython:S117º"URename this parameter "guncelUye" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ï–¾ıÿÿÿÿ
+upython:S117Ç"XRename this local variable "yeniUye" to match the regular expression ^[_a-z][a-z0-9_]*$.(šš’òıÿÿÿÿ
+fpython:S117Ô"NRename this parameter "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(´¨Ô‹
+kpython:S100Ô"SRename method "girisCikisDosya" to match the regular expression ^[a-z_][a-z0-9_]*$.(´¨Ô‹
+Apython:S108İ")Either remove or fill this block of code.(ã‘Û¾
+Apython:S108â")Either remove or fill this block of code.(ã‘Û¾
+fpython:S117å"NRename this parameter "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(ğ¼ÿö
+kpython:S117ş"NRename this parameter "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÿÁ”ÿÿÿÿÿ
+kpython:S117š"NRename this parameter "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(í‚İúÿÿÿÿ
+npython:S100š"QRename method "girisCikisSil" to match the regular expression ^[a-z_][a-z0-9_]*$.(í‚İúÿÿÿÿ
+spython:S117¸"[Rename this local variable "boyKiloEnd" to match the regular expression ^[_a-z][a-z0-9_]*$.(ªâÄß
+rpython:S117§"[Rename this parameter "cinsiyetBoyKilo" to match the regular expression ^[_a-z][a-z0-9_]*$.(ºÆà>
+opython:S117¶"WRename this local variable "netYag" to match the regular expression ^[_a-z][a-z0-9_]*$.(Œ½³Ñ
+xpython:S117·"[Rename this local variable "yagsizKilo" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÁéÁÿúÿÿÿÿ
+^python:S100¿"FRename method "Id" to match the regular expression ^[a-z_][a-z0-9_]*$.(ºËç¢
+7python:S125Æ"Remove this commented out code.(×æ’Ö
+^python:S100Ë"FRename method "Id" to match the regular expression ^[a-z_][a-z0-9_]*$.(ãñÙ–
+lpython:S100õ"ORename method "dogumTarihi" to match the regular expression ^[a-z_][a-z0-9_]*$.(–Ë›‹ùÿÿÿÿ
+gpython:S100ÿ"ORename method "dogumTarihi" to match the regular expression ^[a-z_][a-z0-9_]*$.(éº²ƒ
+ipython:S100‰"LRename method "aboneTip" to match the regular expression ^[a-z_][a-z0-9_]*$.(½ºâÕÿÿÿÿÿ
+dpython:S100“"LRename method "aboneTip" to match the regular expression ^[a-z_][a-z0-9_]*$.(àØÜ
+lpython:S100±"ORename method "kayitTarihi" to match the regular expression ^[a-z_][a-z0-9_]*$.(›§«ˆøÿÿÿÿ
+lpython:S100»"ORename method "kayitTarihi" to match the regular expression ^[a-z_][a-z0-9_]*$.(àÌ›ùÿÿÿÿ
+xpython:S117Î"[Rename this local variable "yeniUyeler" to match the regular expression ^[_a-z][a-z0-9_]*$.(£õÙÿÿÿÿÿ
+npython:S1542Æ"PRename function "okumaListe" to match the regular expression ^[a-z_][a-z0-9_]*$.(ßªòºüÿÿÿÿ
+ppython:S1542Ñ"RRename function "convertToUye" to match the regular expression ^[a-z_][a-z0-9_]*$.(ì•Ú¨øÿÿÿÿ
+mpython:S1542Ş"TRename function "convertToUyeUp" to match the regular expression ^[a-z_][a-z0-9_]*$.(‡è’Â
+mpython:S1542ê"TRename function "convertFromUye" to match the regular expression ^[a-z_][a-z0-9_]*$.(íäÓœ
+mpython:S1542õ"TRename function "replaceProgram" to match the regular expression ^[a-z_][a-z0-9_]*$.(¤È¼ò
+7python:S125ÿ"Remove this commented out code.(Ëì…´
+ppython:S1542‡"WRename function "convertToPassword" to match the regular expression ^[a-z_][a-z0-9_]*$.(üÑ¾ü

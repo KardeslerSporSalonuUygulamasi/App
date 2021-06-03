@@ -1,37 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="SporSalonuUI.Program">
-    <Position X="13.75" Y="5.75" Width="1.5" />
+    <Position X="1" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SporSalonuUI.Giris">
-    <Position X="2.25" Y="0.5" Width="3.75" />
+    <Position X="3.25" Y="0.5" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>EhAAAgQAACAABAAAAACEAAACAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <HashCode>EhBAAgQAACAABAAAAACEAAACIAAgAAAAAAAAAQAAAAA=</HashCode>
       <FileName>Giris.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SporSalonu.ProgramOluşturForm">
-    <Position X="11" Y="0.5" Width="5.25" />
+    <Position X="13.5" Y="0.5" Width="5.5" />
     <TypeIdentifier>
-      <HashCode>CAAAAYAAEGAAABAAAACBAAACAAAAAAAABoAAAAAAAAA=</HashCode>
+      <HashCode>QAAIAIggEGAAEJkQUwDDAAAOAIABIYDAA7AAQKCBgAA=</HashCode>
       <FileName>ProgramOluşturForm.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SporSalonuUI.UyeBul">
-    <Position X="2.25" Y="4.25" Width="3.75" />
+    <Position X="3.25" Y="5" Width="4.75" />
     <TypeIdentifier>
-      <HashCode>AIABAAAAACAAAAAAAACAIAACAAAAIAAQAAAAAAAAAAI=</HashCode>
+      <HashCode>CIRBKAAAQCQABIAAIECAKAASAIAgKgRUAAAAAgIAACI=</HashCode>
       <FileName>UyeBul.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SporSalonuUI.UyeOlusturma">
-    <Position X="6.25" Y="0.5" Width="4.75" />
+    <Position X="8.25" Y="0.5" Width="5" />
     <TypeIdentifier>
-      <HashCode>ECABAAEAEDAAABAADAKAEAACAABNAEAABAgAQCSAAAI=</HashCode>
+      <HashCode>EOBhigkCGTAAgAABDQKAGICCAABtQMAFVigZQCWAKQI=</HashCode>
       <FileName>UyeOlusturma.cs</FileName>
     </TypeIdentifier>
   </Class>

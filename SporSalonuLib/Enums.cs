@@ -12,8 +12,8 @@ namespace SporSalonuLib
     public enum DatabaseType
     {
         /// <summary>
-        /// Text enumu
+        /// Python Csv enumu
         /// </summary>
-        TextFile
+        PyCSVFile
     }
 }

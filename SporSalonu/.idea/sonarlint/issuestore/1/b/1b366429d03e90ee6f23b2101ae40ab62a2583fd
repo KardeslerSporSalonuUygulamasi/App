@@ -1,0 +1,13 @@
+
+;python:S125"Remove this commented out code.(³ÛÄÙüÿÿÿÿ
+ipython:S100"SRename method "netYagHesaplama" to match the regular expression ^[a-z_][a-z0-9_]*$.(¨Óñ
+qpython:S100"URename method "yagsizKiloHesapla" to match the regular expression ^[a-z_][a-z0-9_]*$.(‰õ¬™şÿÿÿÿ
+tpython:S5864."\Fix this equality check; Previous type checks suggest that operands have incompatible types.(é÷ÍĞ
+hpython:S1004"QRename method "boyKiloEndeks" to match the regular expression ^[a-z_][a-z0-9_]*$.(×°Şø
+dpython:S117O"NRename this parameter "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(¬á
+dpython:S100O"NRename method "programSil" to match the regular expression ^[a-z_][a-z0-9_]*$.(¬á
+dpython:S117\"NRename this parameter "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÿûô.
+dpython:S100\"NRename method "programYaz" to match the regular expression ^[a-z_][a-z0-9_]*$.(ÿûô.
+epython:S117n"NRename this parameter "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(—Ê“
+epython:S100n"NRename method "programOku" to match the regular expression ^[a-z_][a-z0-9_]*$.(—Ê“
+lpython:S3776n"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(—Ê“

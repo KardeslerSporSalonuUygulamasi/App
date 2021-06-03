@@ -24,3 +24,6 @@ C:\Users\jozzy\source\repos\SporSalonu\SporSalonu\obj\Debug\SporSalonu.applicati
 C:\Users\jozzy\source\repos\SporSalonu\SporSalonu\obj\Debug\SporSalonuUI.csproj.CopyComplete
 C:\Users\jozzy\source\repos\SporSalonu\SporSalonu\obj\Debug\SporSalonu.exe
 C:\Users\jozzy\source\repos\SporSalonu\SporSalonu\obj\Debug\SporSalonu.pdb
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonu\obj\Debug\SporSalonu.UyeGirisiForm.resources
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonu\obj\Debug\SporSalonu.LoginForm.resources
+C:\Users\jozzy\source\repos\SporSalonu\SporSalonu\obj\Debug\SporSalonu.g.resources

@@ -68,6 +68,26 @@ namespace SporSalonuLib.Models
         public string Boy { get; set; }
 
         /// <summary>
+        /// Kişinin tercih ettiği abonelik tipi
+        /// </summary>
+        public string abonelikTipi { get; set; }
+
+        /// <summary>
+        /// kişiye uygun görülen ücret
+        /// </summary>
+        public string fiyat { get; set; }
+
+        /// <summary>
+        /// Kişinin kaydının başladığı tarih
+        /// </summary>
+        public string kayitTarihi { get; set; }
+
+        /// <summary>
+        /// Hesaplamalar tutulur. YağsizKilo|boykilo|netyağ
+        /// </summary>
+        public string hesaplamalar { get; set; }
+
+        /// <summary>
         /// Kişinin tam adını dönen bir fonksiyon.
         /// </summary>
         public string TamAd
@@ -83,6 +103,9 @@ namespace SporSalonuLib.Models
             }
 
         }
+        public string Uyeler { get; set; }
+
+        public string passwd { get; set; }
 
     }
 }
